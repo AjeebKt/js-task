@@ -3,25 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<title>js</title>
-<script>
-
-// TO DO 
-/*footer shows curret year*/
-
-
-// TO DO 
-/* alert same function page load & click */
-</script>
 </head>
 <body>
-	<button>Alert me</button>
+	<button id="btn" onclick="alShow()">Alert me</button>
 	<hr>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos perspiciatis nihil porro magnam corporis quaerat voluptatibus soluta facere nesciunt autem quod sit alias sint explicabo nostrum dolore ipsa, aliquid adipisci?</p>
+	<p id="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos perspiciatis nihil porro magnam corporis quaerat voluptatibus soluta facere nesciunt autem quod sit alias sint explicabo nostrum dolore ipsa, aliquid adipisci?</p>
 	<hr>
 	<footer>
 		<div class="container">
 			 <p class="pp">Copyright <span id="year">2014</span> by PSD Booster. All Right Recieved.</p>
 		</div>
 	</footer>
+
+
+	<script>
+
+		(function () {
+
+			alShow();
+			// function alShow(){
+			// 	alert("Welcome to my page..");
+			// }
+			// document.getElementById('btn').onclick = 
+			getYear();
+
+			function getYear() {
+				var date = new Date();
+				var thisYear = date.getFullYear();
+				document.getElementById("year").innerHTML = thisYear;
+			}
+
+		})();
+
+		function alShow(){
+				alert("Welcome to my page..");
+		}
+
+		
+
+
+			//
+		// TO DO 
+		/*footer shows curret year*/
+
+
+		// TO DO 
+		/* alert same function page load & click */
+	</script>
 </body>
 </html>

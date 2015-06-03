@@ -4,18 +4,25 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css.css">
+	<script type="text/javascript">
+		function add ()
+		{
+			var ul = document.getElementById("ul");
+			var li = document.createElement("li");
+			li.innerHTML = "hi";
+			ul.appendChild(li);
+		}
+	</script>
 </head>
 <body>
-	<div class="to-do">
-		<ul>
-			<li>
-				<input type="text" class>
-				
-				<div class="plus">
-					
-				</div>
-			</li>
-		</ul>
-	</div>
+	<ul id="ul" class="to-do">
+		<li>
+			<input type="text">
+			<!-- <input type="submit">				 -->
+			<button class="plus" value="Add" onclick="add()">
+				+
+			</button>
+		</li>
+	</ul>
 </body>
 </html>

@@ -8,9 +8,9 @@
 		function add ()
 		{
 			var toDo = document.getElementById("toDo");
-			var inputValue = document.getElementById("txt").value;
+			var todoValue = document.getElementById("txt").value;
 			var list = document.createElement("li");
-			list.innerHTML = '<span>'+ inputValue +'</span>';
+			list.innerHTML = '<span>'+ todoValue +'</span>';
 			toDo.appendChild(list);
 			// ul.prependChild(li);
 		}
@@ -19,7 +19,7 @@
 <body>
 	<div class="todo-list">
 		<h2>-ToDo-</h2>
-		<ul id="ul" class="to-do">
+		<ul id="toDo" class="to-do">
 			<li>
 				<input type="text" id="txt" >
 				<button type="submit" onclick="add()">
@@ -27,7 +27,6 @@
 				</button>
 			</li>
 		</ul>
-
 	</div>
 </body>
 </html>

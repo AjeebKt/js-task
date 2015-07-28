@@ -5,15 +5,17 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css.css">
 	<script type="text/javascript">
-		function add ()
-		{
-			var toDo = document.getElementById("toDo");
-			var todoValue = document.getElementById("txt").value;
-			var list = document.createElement("li");
-			list.innerHTML = '<span>'+ todoValue +'</span>';
-			toDo.appendChild(list);
-			// ul.prependChild(li);
-		}
+		// var toDo = document.getElementById("toDo");
+		// var todoValue = document.getElementById("txt").value;
+			function add()
+			{
+				var toDo = document.getElementById("toDo");
+				var todoValue = document.getElementById("txt").value;
+				var list = document.createElement("li");
+				list.innerHTML = '<span>'+ todoValue +'</span>';
+				toDo.appendChild(list);
+				// ul.prependChild(li);
+			}
 	</script>
 </head>
 <body>
